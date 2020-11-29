@@ -4,18 +4,65 @@
   --secondary-color: #757575;
 }
 
-/* ========Header=========================== */
-
 body {
   font-family: 'Roboto', sans-serif;
 }
 
-a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+.header {
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+/* ========Header=========================== */
+
+.site-nav {
+  display: flex;
+}
+.site-nav .logo {
+  margin-right: 93px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding-top: 24px;
+  padding-bottom: 12px;
 }
 
 .logo {
@@ -29,6 +76,15 @@ ul {
 
 .logo-accent {
   color: var(--accent-color);
+}
+
+.site-nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav-list li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav-item {
@@ -51,6 +107,15 @@ ul {
   color: var(--accent-color);
 }
 
+.header .contacts-list {
+  margin-left: auto;
+}
+.contacts-list {
+  display: flex;
+}
+.contacts-list li:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts-list-item {
   font-family: inherit;
   font-weight: 500;
@@ -62,7 +127,18 @@ ul {
 /* ========End header======================= */
 
 /* ========Hero=========================== */
+
 .main-title {
+  max-width: 696px;
+  margin-bottom: 30px;
+}
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.main-title {
+  margin: 0 auto 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -72,6 +148,15 @@ ul {
 }
 
 .order-btn {
+  display: flex;
+  padding: 10px 32px;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  min-width: 200px;
+
+  cursor: pointer;
+
   font-weight: bold;
   font-size: 16px;
   line-height: 1.86;
@@ -84,7 +169,27 @@ ul {
 /* ========End Hero======================= */
 
 /* ========Advantages=========================== */
+.advantages-title {
+  height: 0;
+  overflow: hidden;
+}
+
+.advantages .container {
+  padding-top: 99px;
+  padding-bottom: 94px;
+}
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages-item {
+  width: calc((100% - 90px) / 4);
+}
+
 .advantages-item-title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -103,7 +208,12 @@ ul {
 /* ========End Advantages======================= */
 
 /* ========Services=========================== */
+.services .container {
+  padding-bottom: 86px;
+}
+
 .section-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -111,10 +221,27 @@ ul {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
 /* ========End Services======================= */
 
 /* ========Team=========================== */
+.team .container {
+  padding-bottom: 62px;
+}
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-memeber-img {
+  margin-bottom: 30px;
+}
+
 .team-member-name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -134,6 +261,18 @@ ul {
 /* ========End Team======================= */
 
 /* ========Footer=========================== */
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.adress-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
 .adress-item {
   font-weight: 400;
   font-size: 14px;
@@ -160,7 +299,24 @@ footer {
 /* ========End Footer======================= */
 
 /* ========Portfolio======================= */
+.cards .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-list li:not(:last-child) {
+  margin-right: 8px;
+}
+
 .filter-item {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -173,9 +329,26 @@ footer {
 .filter-item:focus {
   color: #ffffff;
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.card-item-img {
+  margin-bottom: 20px;
+}
+
+.card-item {
+  margin-top: 30px;
+  margin-left: 30px;
+}
 .card-title {
+  padding: 0 24px 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -184,6 +357,8 @@ footer {
 }
 
 .card-description {
+  padding: 0 20px 24px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.86;
