@@ -1,0 +1,193 @@
+:root {
+  --main-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-color: #757575;
+}
+
+/* ========Header=========================== */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.site-nav-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+
+.site-nav-item:hover,
+.site-nav-item:focus,
+.contacts-list-item:hover,
+.contacts-list-item:focus,
+.adress-item:hover,
+.adress-item:focus,
+.adress-item.location:hover,
+.adress-item.location:focus,
+.site-nav-item.current {
+  color: var(--accent-color);
+}
+
+.contacts-list-item {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+/* ========End header======================= */
+
+/* ========Hero=========================== */
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.order-btn {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.86;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+/* ========End Hero======================= */
+
+/* ========Advantages=========================== */
+.advantages-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.advantages-item-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* ========End Advantages======================= */
+
+/* ========Services=========================== */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+/* ========End Services======================= */
+
+/* ========Team=========================== */
+.team-member-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.team-member-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* ========End Team======================= */
+
+/* ========Footer=========================== */
+.adress-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-item.location {
+  color: #ffffff;
+}
+
+address {
+  font-style: normal;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+.logo.dark-theme {
+  color: #ffffff;
+}
+/* ========End Footer======================= */
+
+/* ========Portfolio======================= */
+.filter-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.filter-item:hover,
+.filter-item:focus {
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* ========End Portfolio======================= */ ;
